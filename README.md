@@ -22,8 +22,8 @@ import geoDownloader
 """
 
 map_size = 10
-col      = 34033
-row      = 23892
+col      = 33325
+row      = 24055
 zoom     = 16
 
 layer1 = "ORTHOIMAGERY.ORTHOPHOTOS"
@@ -37,3 +37,13 @@ print("Blending maps")
 geoDownloader.blend_maps(layer1+"/final.jpg",layer1+"/final.jpg","final.png",0.4)
 print("Done")
 ```
+
+## Result
+
+![resulting image](final.png)
+
+## To do
+
+-[ ] delete tiles after final rendering
+-[ ] add console arguments for map size , coordinates , zoom
+-[ ] take coordinates as argument
