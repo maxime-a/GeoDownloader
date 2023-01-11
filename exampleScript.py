@@ -11,8 +11,8 @@ import geoDownloader
 """
 
 map_size = 10
-col      = 34033
-row      = 23892
+col      = 33323
+row      = 24053
 zoom     = 16
 
 layer1 = "ORTHOIMAGERY.ORTHOPHOTOS"
@@ -23,5 +23,5 @@ geoDownloader.save_map(map_size,col,row,zoom,layer1)
 print("Starting map download")
 geoDownloader.save_map(map_size,col,row,zoom,layer2)
 print("Blending maps")
-geoDownloader.blend_maps(layer1+"/final.jpg",layer1+"/final.jpg","final.png",0.4)
+geoDownloader.blend_maps(layer2+"/final.jpg",layer1+"/final.jpg","final.png",0.4)
 print("Done")
