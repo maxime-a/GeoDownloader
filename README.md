@@ -10,8 +10,6 @@ Made with Python 3.7.4
 import geoDownloader
 
 """
-    11/01/23 --- Maxime Ay
-
     Little script to make high resolution map. Specifically here it is a blend
     between satellite images and topography IGN map. 
 
@@ -22,8 +20,8 @@ import geoDownloader
 """
 
 map_size = 10
-col      = 33325
-row      = 24055
+col      = 33323
+row      = 24053
 zoom     = 16
 
 layer1 = "ORTHOIMAGERY.ORTHOPHOTOS"
@@ -34,7 +32,7 @@ geoDownloader.save_map(map_size,col,row,zoom,layer1)
 print("Starting map download")
 geoDownloader.save_map(map_size,col,row,zoom,layer2)
 print("Blending maps")
-geoDownloader.blend_maps(layer1+"/final.jpg",layer1+"/final.jpg","final.png",0.4)
+geoDownloader.blend_maps(layer2+"/final.jpg",layer1+"/final.jpg","final.png",0.4)
 print("Done")
 ```
 
@@ -45,5 +43,7 @@ print("Done")
 ## To do
 
 -[ ] delete tiles after final rendering
+
 -[ ] add console arguments for map size , coordinates , zoom
+
 -[ ] take coordinates as argument
