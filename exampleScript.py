@@ -18,7 +18,7 @@ zoom     = 16
 layer1 = "ORTHOIMAGERY.ORTHOPHOTOS"
 layer2 = "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR.CV"
 
-print("Starting sattelite download")
+print("Starting satellite download")
 geoDownloader.save_map(map_size,col,row,zoom,layer1)
 print("Starting map download")
 geoDownloader.save_map(map_size,col,row,zoom,layer2)
