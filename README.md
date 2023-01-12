@@ -2,6 +2,8 @@
 
 Python little functions to make high resolution map. From IGN/Geoportail data.
 
+[IGN Tool to identify tile coordinates according to zoom level](https://geoservices.ign.fr/documentation/services/api-et-services-ogc/images-tuilees-wmts-ogc#1586)
+
 Made with Python 3.7.4
 
 ## Example
@@ -27,7 +29,7 @@ zoom     = 16
 layer1 = "ORTHOIMAGERY.ORTHOPHOTOS"
 layer2 = "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR.CV"
 
-print("Starting sattelite download")
+print("Starting satellite download")
 geoDownloader.save_map(map_size,col,row,zoom,layer1)
 print("Starting map download")
 geoDownloader.save_map(map_size,col,row,zoom,layer2)
